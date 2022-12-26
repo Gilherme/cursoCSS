@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cursoCss.css">
+	<title>Cuso css</title>
+	<style>
+		.caixa{width: 80px; height: 50px;}
+
+		.borda01{border: 5px dotted red;}
+		.borda02{border: 5px dashed blue;}
+		.borda03{border: 5px solid black;}
+		.borda04{border: 5px double darkblue}
+		.borda05{border: 5px groove yellow;}
+		.borda06{border: 5px ridge gray;}
+		.borda07{border: 5px inset darkblue}
+		.borda08{border: 5px outset red;}
+		.borda09{border: 5px none darkgray;}
+		.borda10{border: 5px hidden blueviolet;}
+
+		/*Uma maneira com mais liberdade de desenvolvimento*/
+		.borda11{
+			border-color: hotpink black green gray;
+			border-width: 7px 10px 3px 20px;
+			border-style: solid inset groove hidden;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Bordas</h1>
+	<div>
+		<span class="caixa borda01">dotted</span>
+		<span class="caixa borda02">dashed</span>
+		<span class="caixa borda03">solid</span>
+		<span class="caixa borda04">double</span>
+		<span class="caixa borda05">groove</span>
+		<span class="caixa borda06">ridge</span>
+		<span class="caixa borda07">inset</span>
+		<span class="caixa borda08">outset</span>
+		<span class="caixa borda09">outset</span>
+		<span class="caixa borda10">outset</span>
+		<p>A hiden tem borda, ela apenas não aparece, é tranaparente, já na none a borda é 'tirada' </p>
+	</div>
+	<div class="borda11">
+		<p>Uma borda diversificada</p>
+	</div>
+
+</body>
+</html>

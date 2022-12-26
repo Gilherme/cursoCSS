@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Curso css - Bacgrounds</title>
+	<style>
+		body{font: 16px Arial, sans-serif ;}
+		.codigo{color: hotpink;}
+		.text-blue{color: blue;}
+
+		.caixa8{width: 1200px; height: 300px; border: 1px solid black;}
+		.caixa10{width: 1200px; height: 700px; border: 1px solid black;}
+
+		.fundo1{
+			background-image: url(img/yoshi.png);
+			/*background-repeat: no-repeat;*/
+			/*background-repeat: repeat;*/
+			/*background-repeat: repeat-x;*/
+			/*background-repeat: repeat-y;*/
+		}
+
+		.fundo3{
+			background-image: url(img/yoshi.png);
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+			/*background-position: center center;*/
+			background-position: top center;
+			}
+
+			.fundo4{
+				background: gray url(img/yoshi.png) no-repeat scroll center;
+			}
+	</style>
+</head>
+<body>
+
+	<h1>Curso CSS</h1>
+
+	<ul>
+		<li><a href="bordas.html">Bordas</a></li>
+		<li><a href="textos.html">Textos</a></li>
+		<li><a href="bacgrounds.html">Bacgrounds</a></li>
+	</ul>
+
+	<div>
+		<h1>Bacgrounds</h1>
+		<p> Use <span class="codigo">bacgound-color: ;</span> Para adicionar uma cor de fundo, podem ser cores rgba, exadecimal ou o nome por extenço, como, blue</p>
+		<hr>
+		<div>
+			<h3>Bacground-image</h3>	
+			<p> Use <span class="codigo">bacgound-image: <span class="text-blue">url('enderecoDaImagem.jpg')</span> ;</span>  Para adicionar uma imagem de fundo</p>
+			<hr>
+			<h3>Background-repeat</h3>
+			<p>O padrão de quando se aplica uma imagem de fundo é que ela se repete até cobrir todo o espaço disponivel</p>
+
+			<p>Com a propriedade <span class="codigo">bacground-repeat: ;</span> Podemos dar os valores:</p>
+			<ul>
+				<li><span class="text-blue">no-repeat</span> - A imagem não se repete </li>
+				<li><span class="text-blue">repeat</span> ----- Repete a imagem nos eixos X e Y (Padrão)</li>
+				<li><span class="text-blue">repeat-x</span> --- Repete a imagem no eixo X</li>
+				<li><span class="text-blue">repeat-y</span> --- Repete a imagem no eixo Y</li>
+			</ul><hr>
+			<div class="caixa8 fundo1"></div><hr>
+
+			<h3>Bacground-attachment:;</h3>
+			<p> Com a propriedade <span class="codigo">bacground-attachment: ;</span> definimos se a imagem acompanhara o conteudo ou ficara estática. Podemos dar os seguintes valores:</p>
+			<ul>
+				<li><span class="text-blue">fixed</span> --- Faz a imagem ficar estática, parada no fundo, mesmo que o conteudo dá pagina desça ou suba</li>
+				<li><span class="text-blue">scroll</span> --- A imagem acompanha o conteudo da pagina</li>
+			</ul><hr>
+
+			<h3>Bacground-position</h3>
+			<p>Com a propriedade <span class="codigo">background-position: <span class="text-blue"> eixo-x eixo-y</span> ;</span>  podemos dar valores que definirão a posição da img de fundo  Definomos a posição onde a imagem de fundo ficará. Com os seguintes valores: </p>
+			<ul>
+				<li><span class="text-blue">left</span></li>
+				<li><span class="text-blue">center</span></li>
+				<li><span class="text-blue">right</span></li>
+				<li><span class="text-blue">top</span></li>
+				<li><span class="text-blue">bottom</span></li>
+			</ul>
+
+				<div class="caixa8 fundo3"></div><hr>
+
+			<p>É possivel acrescentar todos esses valores usando apenas uma propriedade, como no exemplo abaixo, usamos: <span class="codigo"> bacground: <span class="text-blue"> gray url(img/yoshi.png) no-repeat scroll center</span> ;</span></p>
+			<span>É importante que seja como na ordem acima <span class="codigo">bacground-color:;</span> => <span class="codigo">bacground-image:;</span> => <span class="codigo">bacground-repeat:;</span> => <span class="codigo">bacground-attachment:;</span> => <span class="codigo">bacground-position:;</span></span>
+			<div class="caixa8 fundo4"></div>
+		</div>
+
+
+	</div>
+
+</body>
+</html>
