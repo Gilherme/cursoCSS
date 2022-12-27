@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cursoCss.css">
+	<title>Curso css</title>
+	<style>
+		#container01{
+			background: #f2f2f2 ;
+			border: 1px solid black;
+		}.conteudo{
+			float:left ;
+			background: gray;
+			border: 1px solid black;
+			width: 150px;
+			height: 150px;
+			margin: 10px;
+		}.conteudo2{
+			float: left;
+			background: blue;
+			border: 1px solid black;
+			width: 160px;
+			height: 160px;
+			margin: 10px;
+			padding: 20px;
+		}.conteudo3{
+			float: left;
+			background: red;
+			border: 1px solid black;
+			width: 150px;
+			height: 150px;
+			margin: 10px;
+		}.clear{
+			clear: both;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h1>Curso CSS</h1>
+
+	<ul>
+		<li><a href="bordas.html">Bordas</a></li>
+		<li><a href="textos.html">Textos</a></li>
+		<li><a href="bacground.html">Bacgrounds</a></li>
+		<li><a href="boxModel.html">Box Model</a></li>
+		<li><a href="elementosFlutuantes.html">Elementos flutuantes</a></li>
+	</ul>
+<hr>
+	<div>
+		<h1>Elementos Flutuantes</h1>
+		<p>Com a propriedade <span class="codigo">float: ;</span> conseguimos fazer com que os box fiquem um ao lado do outro, possibilitando varias possibilidades, os valores disponiveis são:</p>
+		<ul>
+			<li><span class="text-blue">right</span> => O box flutuara a direita</li>
+			<li><span class="text-blue">left</span> => O box flutuara a esquerda</li>
+			<li><span class="text-blue">none</span> => O box não flutuará</li>
+			<li><span class="text-blue">right</span> => O box flutuara a direita</li>
+		</ul>
+
+		<div class="conteudo">
+			conteudo 1		
+		</div>
+		<div class="conteudo2">
+			conteudo 2		
+		</div>
+		<div class="conteudo3">
+			conteudo 3	
+		</div>
+		<p class="clear"><span class="text-red">*IMPORTANTE</span> Quando dentro de um container aplicamos a propriedade float em alguns elementos, esses entram em um fluxo diferente do fluxo original da pagina, podendo gerar bugs, como por exemplo um elemento sobrepor outro, para isso não acontecer use a propriedade <span class="codigo">clear: ;</span> e podemos dar os seguintes valores:</p>
+		<ul>
+			<li><span class="text-blue">left</span> => Limpa o fluxo flutuante a esquerda, funciona como se o conteudo pulasse para baixo</li>
+			<li><span class="text-blue">right</span> => Limpa o fluxo a erquerda</li>
+			<li><span class="text-blue">both</span> => Limpa o fluxo de ambos acima, de preferencia a esse</li>
+			<li><span class="text-blue">none</span> => Não limpa, age como se não houvesse o clear</li>
+		</ul>
+
+		<p><span class="text-red">*IMPORTANTE</span>Quando coloca elementos flutuantes dentro de uma div principal, os elementos flutuantes utrapassam as fronteiras da div principal, logo a div principal não se expande e é como se não exixtisse</p>
+		<p>Para fazer com que esses elementos fiquem dentro da div principal usa-se um "macete" que é colocar uma outra div, não precisa ter conteudo mas precisa ter uma classe com a propriedade <span class="codigo">clear</span> Abaixo está um exemplo</p>
+
+		<div id="container01">
+
+			<div class="conteudo">
+			conteudo 1		
+			</div>
+			<div class="conteudo2">
+				conteudo 2		
+			</div>
+			<div class="conteudo3">
+				conteudo 3	
+			</div>
+			<div class="clear"></div>
+			
+		</div>
+		<h3>Exemplos de layouts</h3>
+		<ul>
+			<li><a href="noticias.html">Site de noticias</a></li>
+			<li></li>
+		</ul>
+
+
+	</div>
+
+
+</body>
+</html>
