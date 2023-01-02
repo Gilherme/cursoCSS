@@ -61,59 +61,63 @@
 		<li><a href="inlineBlock.html">Elementos em Bloco</a></li>
 		<li><a href="posicionamento.html">Posicionamento</a></li>
 	</ul><hr>
+	<div id="container">
 
-	<h1>Posicionamento</h1>
-	<p>Para usar posicionamento  usamos a propriedade <span class="codigo">Position: ;</span> e podemos aplicar os valores abaixo. Por padrão todos os elementos assumem o <span class="codigo">position:<span class="text-blue">static</span>;</span></p>
+		
+		<h1>Posicionamento</h1>
+		<p>Para usar posicionamento  usamos a propriedade <span class="codigo">Position: ;</span> e podemos aplicar os valores abaixo. Por padrão todos os elementos assumem o <span class="codigo">position:<span class="text-blue">static</span>;</span></p>
 
-	<ul>
-		<li>static</li>
-		<li>relative</li>
-		<li>absolute</li>
-		<li>fixed</li>
-	</ul><hr>
-
-	<div id="static"></div>
-	<div id="relative">
-		<p>Aplicar o <span class="codigo">Position: <span class="text-blue">relative</span> ;</span> por si só não altera em nada o posicionamento do elemento, para isso precisamos usar outras propriedades, listada abaixo,</p>
 		<ul>
-			<li><span class="codigo">top: <span class="text-blue">Ypx</span> ;</span> Onde Y quer dizer a quantidade de pixels a ser dada como "margin". As propriedades abaixo funcionam da mesma maneira e pode ser dado valores negativos também</li>
-			<li><span class="codigo">right: <span class="text-blue">Ypx</span> ;</span></li>
-			<li><span class="codigo">bottom: <span class="text-blue">Ypx</span> ;</span></li>
-			<li><span class="codigo">left: <span class="text-blue">Ypx</span> ;</span></li>
-			<p class="text-red">O alinhamento vai ser em relação a sua antiga posição</p>
-		</ul>
-		<div class="container02">
+			<li>static</li>
+			<li>relative</li>
+			<li>absolute</li>
+			<li>fixed</li>
+		</ul><hr>
+
+		<div id="static"></div>
+		<div id="relative">
+			<p>Aplicar o <span class="codigo">Position: <span class="text-blue">relative</span> ;</span> por si só não altera em nada o posicionamento do elemento, para isso precisamos usar outras propriedades, listada abaixo,</p>
+			<ul>
+				<li><span class="codigo">top: <span class="text-blue">Ypx</span> ;</span> Onde Y quer dizer a quantidade de pixels a ser dada como "margin". As propriedades abaixo funcionam da mesma maneira e pode ser dado valores negativos também</li>
+				<li><span class="codigo">right: <span class="text-blue">Ypx</span> ;</span></li>
+				<li><span class="codigo">bottom: <span class="text-blue">Ypx</span> ;</span></li>
+				<li><span class="codigo">left: <span class="text-blue">Ypx</span> ;</span></li>
+				<p class="text-red">O alinhamento vai ser em relação a sua antiga posição</p>
+			</ul>
+			<div class="container02">
+				<div class="caixa01"></div>
+				<div class="caixa01 teste01"></div>
+				<div class="caixa01"></div>
+			</div>
+		</div><hr>
+		<div id="absolute">
+			<p>Quando aplicamos o valor <span class="text-blue">absolute</span> o elemento sai totalmente do fluxo natural e o que viria abaixo dele toma o lugar dele e sem aplicar as propriedades <span class="codigo">top, right, left e bottom</span>, ele o sobrepoem </p>
+			<p>IMPORTANTE: O elemento sempe se baseara no container pai quando forem aplicada as propriedades de posição, porem é nesncessário que aplique no container pai o <span class="codigo">position: <span class="text-blue">relative</span> ;</span></p>
+			<p class="text-red">O alinhamento vai ser em relação ao container pai</p>
 			<div class="caixa01"></div>
-			<div class="caixa01 teste01"></div>
+			<div class="caixa01 teste02"></div>
 			<div class="caixa01"></div>
+		</div><hr>
+		<div id="fixed">
+			<p>Usando o <span class="text-blue">fixed</span> o elemento fica parado e não acompanha o rolamento da pagina usano normalmente em menus suspensos ou chat no canto da pagina</p>
+			<p class="fixed">ESSE PARAGRAFO TEM POSICIONAMENTO FIXED</p>
+			<p class="text-red">O alinhamento vai ser em relação a tela</p>
+		</div><hr>
+
+		<div>
+			<h3>Sobrepondo elementos</h3>
+			<p>Quando aplicamos <span class="codigo">position: ;</span> dependendo do valor, um alemento pode ficar sobre o outro</p>
+			<p>Com a propriedade <span class="codigo">z-index: <span class="text-blue">x</span> ;</span> Onde x x é um numero, definimos qual elemento aparecerá na frente, o numero maior fica na frente. É importante que todos os elementos afetados estejam com o <span class="codigo">position: ;</span>  </p>
 		</div>
-	</div><hr>
-	<div id="absolute">
-		<p>Quando aplicamos o valor <span class="text-blue">absolute</span> o elemento sai totalmente do fluxo natural e o que viria abaixo dele toma o lugar dele e sem aplicar as propriedades <span class="codigo">top, right, left e bottom</span>, ele o sobrepoem </p>
-		<p>IMPORTANTE: O elemento sempe se baseara no container pai quando forem aplicada as propriedades de posição, porem é nesncessário que aplique no container pai o <span class="codigo">position: <span class="text-blue">relative</span> ;</span></p>
-		<p class="text-red">O alinhamento vai ser em relação ao container pai</p>
-		<div class="caixa01"></div>
-		<div class="caixa01 teste02"></div>
-		<div class="caixa01"></div>
-	</div><hr>
-	<div id="fixed">
-		<p>Usando o <span class="text-blue">fixed</span> o elemento fica parado e não acompanha o rolamento da pagina usano normalmente em menus suspensos ou chat no canto da pagina</p>
-		<p class="fixed">ESSE PARAGRAFO TEM POSICIONAMENTO FIXED</p>
-		<p class="text-red">O alinhamento vai ser em relação a tela</p>
-	</div><hr>
 
-	<div>
-		<h3>Sobrepondo elementos</h3>
-		<p>Quando aplicamos <span class="codigo">position: ;</span> dependendo do valor, um alemento pode ficar sobre o outro</p>
-		<p>Com a propriedade <span class="codigo">z-index: <span class="text-blue">x</span> ;</span> Onde x x é um numero, definimos qual elemento aparecerá na frente, o numero maior fica na frente. É importante que todos os elementos afetados estejam com o <span class="codigo">position: ;</span>  </p>
-	</div>
+		<div class="caixa01 caixa1">caixa 1</div>
+		<div class="caixa01 caixa2"> caixa 2</div>
 
-	<div class="caixa01 caixa1">caixa 1</div>
-	<div class="caixa01 caixa2"> caixa 2</div>
-
-	<div class="containerC">
-		<div class="centralizado"> aaaaaaaaaaaaaaaa
+		<div class="containerC">
+			<div class="centralizado"> aaaaaaaaaaaaaaaa
+			</div>
 		</div>
+		
 	</div>
 	
 
