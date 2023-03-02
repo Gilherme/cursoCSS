@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex-Box</title>
+  <style>
+    #container{
+      display: grid;
+      /* para definir a largura de cada coluna, uma de cada vez separado por espaço*/
+      grid-template-columns: auto auto auto; 
+      background-color: antiquewhite;
+      /*justify-content: center;      /*Alinha na horinzontal*/
+      /*align-content: center;          /* Alinha na vertical*/ 
+      /* column-gap: 100px;  Gap entre colunas*/
+      /* row-gap: 100px;     Gap entre linhas */
+      /* gap: 10px 20px;     GAP Abreviação   */
+      height: 400px;
+    }
+    .item{
+      background-color: white;
+      border: 1px solid black;
+      margin: 10px;
+    }
+
+    .item01{
+      grid-column-start: 1; 
+      grid-column-end:   2;
+      grid-row-start: 1;
+      grid-row-end:   3;
+    }
+    .item05{
+      grid-column: 3 / 4 ;
+      grid-row: 2 / 4;
+    }
+
+    /* GRID AREA */
+    /* copiado do w3 por preguiça, estudar quando precisar */
+    .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .item8 {
+    grid-area: 1 / 2 / 5 / 6;
+  }
+    
+  </style>
+</head>
+<body>
+  <h1>Flex-Box</h1>
+  <div id="container">
+    <div class="item item01">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item item05">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+  </div>
+  
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>  
+  <div class="item9">9</div>
+  <div class="item10">10</div>
+  <div class="item11">11</div>
+  <div class="item12">12</div>
+  <div class="item13">13</div>
+  <div class="item14">14</div>
+  <div class="item15">15</div>
+</div>
+</body>
+</html>

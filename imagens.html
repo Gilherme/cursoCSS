@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cursoCss.css">
+	<title>Curso css</title>
+</head>
+<style>
+	.divImagem{
+		overflow: hidden;
+	}
+</style>
+<body>
+
+	<h1>Curso CSS</h1>
+
+	<ul>
+		<li><a href="seletores.html">Seletores</a></li>
+		<li><a href="bordas.html">Bordas</a></li>
+		<li><a href="imagens.html">imagens</a></li>
+		<li><a href="textos.html">Textos</a></li>
+		<li><a href="links.html">Links</a></li>
+		<li><a href="bacground.html">Bacgrounds</a></li>
+		<li><a href="barraNavegacao.html">Barra de navegação</a></li>
+		<li><a href="boxModel.html">Box Model</a></li>
+		<li><a href="elementosFlutuantes.html">Elementos flutuantes</a></li>
+		<li><a href="inlineBlock.html">Elementos em Bloco</a></li>
+		<li><a href="posicionamento.html">Posicionamento</a></li>
+	</ul><hr>
+
+	<h1>Imagens</h1>
+
+	<p>Existem 2 tipos de adicionar uma imagem a sua pagina, você pode coloca-la como fundo, veja mais <a href="bacground.html">bacgrounds</a> ou colocala com a tag <span class="text-red">img</span>, que é o que falaremos aqui</p>
+	<p>Na imagem mesmo é possivel adicionar as propriedades <span class="text-blue">width: ;</span> e <span class="text-blue">height: ;</span> Mas ainda sim corre o risco dela passar do tamanho do container pai</p>
+	<p>Para isso não acontecer coloque a img dentro de uma div e nessa div coloque uma classe ou id e use a Propriedade <span class="text-blue">overflow: <span class="text-purple">hidden</span>; Assim a parte da imagem que utrapassar o elemento pai será cortada</span> Veja o exemplo abaixo</p>
+
+	<div class="caixa03 divImagem"><img src="img/imagem1.png"></div>
+
+	<p>Outra maneira de fazer isso E NÃO CORTAR A IMAGEM é diretamenta na imagem colocar um tamanho em porcentagem, logo ela sera uma imagem fluida (se adaptara ao tamanho do container pai)</p>
+
+
+
+	
+
+</body>
+</html>
