@@ -1,81 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="cursoCss.css">
-	<title>Inline & Block</title>
-</head>
-<style>
-
-	.elemento1{
-		background: gray;
-		padding: 5px;
-		margin: 5px;
-		display: block;
-	}.elemento2{
-		background: black;
-		padding: 5px;
-		margin: 5px;
-		display: inline;
-	}.elemento3{
-		background: purple;
-		margin: 5px;
-		padding: 5px;
-		display: inline-block;
-	}
-	
-</style>
-<body>
-
-	<h1>Curso CSS</h1>
-
+<div id="ib">
+	<h1>Elementos em Bloco</h1>
+	<p>Exixtem 3 tipos de elementos em css, que definem o comportamento dos blocos/caixas, são eles:</p>
 	<ul>
-		<li><a href="bordas.html">Bordas</a></li>
-		<li><a href="textos.html">Textos</a></li>
-		<li><a href="bacground.html">Bacgrounds</a></li>
-		<li><a href="boxModel.html">Box Model</a></li>
-		<li><a href="elementosFlutuantes.html">Elementos flutuantes</a></li>
-		<li><a href="inlineBlock.html">Elementos em Bloco</a></li>
-		<li><a href="posicionamento.html">Posicionamento</a></li>
+		<li><a class="text-blue" href=""></a>Block</li>
+		<li><a href=""></a>inline</li>
+		<li><a href=""></a>inline-block</li>
 	</ul>
 
-	<div id="container">
-		<h1>Elementos em Bloco</h1>
-		<p>Exixtem 3 tipos de elementos em css, que definem o comportamento dos blocos/caixas, são eles:</p>
-		<ul>
-			<li><a class="text-blue" href=""></a>Block</li>
-			<li><a href=""></a>inline</li>
-			<li><a href=""></a>inline-block</li>
-		</ul>
-
-		<div id="block">
-			<h3>Elementos Em Bloco - block</h3>
-			<p>Elementos block ocupam toda a largura da pagina</p>
-			<span class="elemento1">Esse é um display block</span>
-			<span class="elemento1">Esse é um display block</span>
-			<span class="elemento1">Esse é um display block</span>
-		</div>
-		<div id="inline">
-			<h3>Elementos Em Bloco - inline</h3>
-			<p>Elementos inline ocupam apenas a largura do conteudo que ela contem</p>
-			<span class=" text-white elemento2"> Esse é um box inline </span>
-			<span class=" text-white elemento2"> tags inline: span, a, img...</span>
-			<span class=" text-white elemento2"> Esse também é um box inline</span>
-		</div>
-		<div id="inline-block">
-			<h3>Elementos Em Bloco - inline-block</h3>
-			<p>Elementos inline-block ocupam apenas a largura do conteudo que ela contem e é possivel adicionar tamanhos</p>
-			<span class=" text-white elemento3"> Esse é um box inline-block </span>
-			<span class=" text-white elemento3"> tags inline: span, div, table, p, h1, a, img...</span>
-			<span class=" text-white elemento3"> Esse também é um box inline-block</span>
-		</div>
-
-		<p><span class="text-red">*IMPORTANTE </span> Geralmente elementos inline como <span class="codigo">span</span> não aceitam formatação de width and height, para mudar isso use <span class="text-blue">inline-block</span> </p>
-
-
+	<div id="block">
+		<h3>Elementos Em Bloco - block</h3>
+		<p>Elementos block ocupam toda a largura da pagina</p>
+		<span class="elemento-ib-01">Esse é um display block</span>
+		<span class="elemento-ib-01">Esse é um display block</span>
+		<span class="elemento-ib-01">Esse é um display block</span>
 	</div>
-	
+	<div id="inline">
+		<h3>Elementos Em Bloco - inline</h3>
+		<p>Elementos inline ocupam apenas a largura do conteudo que ela contem</p>
+		<span class=" text-white elemento-ib-02"> Esse é um box inline </span>
+		<span class=" text-white elemento-ib-02"> tags inline: span, a, img...</span>
+		<span class=" text-white elemento-ib-02"> Esse também é um box inline</span>
+	</div>
+	<div id="inline-block">
+		<h3>Elementos Em Bloco - inline-block</h3>
+		<p>Elementos inline-block ocupam apenas a largura do conteudo que ela contem e é possivel adicionar tamanhos</p>
+		<span class=" text-white elemento-ib-03"> Esse é um box inline-block </span>
+		<span class=" text-white elemento-ib-03"> tags inline: span, div, table, p, h1, a, img...</span>
+		<span class=" text-white elemento-ib-03"> Esse também é um box inline-block</span>
+	</div>
 
-</body>
-</html>
+	<p><span class="text-red">*IMPORTANTE </span> Geralmente elementos inline como <span class="codigo">span</span> não aceitam formatação de width and height, para mudar isso use <span class="text-blue">inline-block</span> </p>
+</div>

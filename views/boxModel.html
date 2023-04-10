@@ -1,73 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="cursoCss.css">
-	<title>Curso css</title>
-</head>
-<body>
-	<style>
-		.espacamento01{	padding: 20px 30px ;}
-		.margem01{
-			margin: 10px;
-		}.margem02{
-			margin: 10px;
-		}
-	</style>
-	<h1>Curso CSS</h1>
-
+<div id="boxModel">
+	<h1>Box Model</h1>
+	<p>Box model ou modelo de caixa é como denominamos uma div, por exemplo que ocupa um espaço dentro da tela, esse espaço muitas vezes retangulares ou quadrados, é nomeado, Box Model</p><hr>
+	<h3>Tamanho dos Box</h3>
+	<p>Podemos definir tamanhos das caixas com as propriedades</p>
 	<ul>
-		<li><a href="bordas.html">Bordas</a></li>
-		<li><a href="textos.html">Textos</a></li>
-		<li><a href="bacground.html">Bacgrounds</a></li>
-		<li><a href="boxModel.html">Box Model</a></li>
-		<li><a href="elementosFlutuantes.html">Elementos flutuantes</a></li>
-		<li><a href="posicionamento.html">Posicionamento</a></li>
-
+		<li><span class="codigo">width: ;</span> => Define a largura de um box os valores podem ser fixos como <span class="text-blue">300px </span> ou <span class="text-blue">80% </span> </li>
+		<li><span class="codigo">height: ;</span> => Definimos a altura de um box usando os mesmos parametros do width</li>
+	</ul><hr>
+	<h3>Padding</h3>
+	<p>Padding é essencial para alinharmos nossos conteudos dentro da caixa, o padding atua entre o conteudo dento da caixa até a borda da caixa, é esse espaçamento entre os dois, como uma margen interna</p>
+	<ul>
+		<li><span class="codigo">padding-top: ;</span> => Espaçamento superior</li>
+		<li><span class="codigo">padding-right: ;</span> => Espaçamento a direita</li>
+		<li><span class="codigo">padding-left: ;</span> => Espaçamento a esquerda</li>
+		<li><span class="codigo">padding-bottom: ;</span> => Espaçamento inferior</li>
+		<li><span class="codigo">padding: <span class="text-blue">Valor1</span> ;</span> => usando só a propriedade padding e passando um valor, ele por padrão adicionará o valor a todos os lados</li>
+		<li><span class="codigo">padding: <span class="text-blue"> valor1 valor2</span>;</span> => Passando 2 valores, o primeiro sera aplicado padding no eixo y, ou seja, top e bottom e o segundo no eixo x, ou seja left e right </li>
 	</ul>
+	<p><span class="text-red">*IMPORTANTE</span> Por padrão o <span class="codigo"> padding</span> se soma a ao tamanho do box, ou seja, se definir uma largura de 100px e adicionar um padding-left de 20px, logo o tamanho total da caixa passa a ser 120px</p>
 
-	<div id="container">
-		<h1>Box Model</h1>
-		<p>Box model ou modelo de caixa é como denominamos uma div, por exemplo que ocupa um espaço dentro da tela, esse espaço muitas vezes retangulares ou quadrados, é nomeado, Box Model</p><hr>
-		<h3>Tamanho dos Box</h3>
-		<p>Podemos definir tamanhos das caixas com as propriedades</p>
-		<ul>
-			<li><span class="codigo">width: ;</span> => Define a largura de um box os valores podem ser fixos como <span class="text-blue">300px </span> ou <span class="text-blue">80% </span> </li>
-			<li><span class="codigo">height: ;</span> => Definimos a altura de um box usando os mesmos parametros do width</li>
-		</ul><hr>
-		<h3>Padding</h3>
-		<p>Padding é essencial para alinharmos nossos conteudos dentro da caixa, o padding atua entre o conteudo dento da caixa até a borda da caixa, é esse espaçamento entre os dois, como uma margen interna</p>
-		<ul>
-			<li><span class="codigo">padding-top: ;</span> => Espaçamento superior</li>
-			<li><span class="codigo">padding-right: ;</span> => Espaçamento a direita</li>
-			<li><span class="codigo">padding-left: ;</span> => Espaçamento a esquerda</li>
-			<li><span class="codigo">padding-bottom: ;</span> => Espaçamento inferior</li>
-			<li><span class="codigo">padding: <span class="text-blue">Valor1</span> ;</span> => usando só a propriedade padding e passando um valor, ele por padrão adicionará o valor a todos os lados</li>
-			<li><span class="codigo">padding: <span class="text-blue"> valor1 valor2</span>;</span> => Passando 2 valores, o primeiro sera aplicado padding no eixo y, ou seja, top e bottom e o segundo no eixo x, ou seja left e right </li>
-		</ul>
-		<p><span class="text-red">*IMPORTANTE</span> Por padrão o <span class="codigo"> padding</span> se soma a ao tamanho do box, ou seja, se definir uma largura de 100px e adicionar um padding-left de 20px, logo o tamanho total da caixa passa a ser 120px</p>
-
-		<div class=" espacamento01 caixa03">
-			<p>esse texto está dentro de uma caixa que inicialmente tinha 100px por 100px mas foram adicionadas paddings de 20px no eixo "y" e 30px no eixo "x" fazendo com que a caixa ficasse com o tamanho de 140px por 160px </p>
-		</div>
-		<hr>
-		<h3>Margin</h3>
-		<p>Como o padding a margin serve para criar espaço entre coisas, mas no caso da mesma o espaçamento é feito entre caixas e não internamento, usando a propriedade <span class="codigo">margin: ;</span> podemos dar valores como <span class="text-blue"> 10px, 15%, auto </span></p>
-		<ul>
-			<li><span class="codigo">margin-top: ;</span> => Margem superior</li>
-			<li><span class="codigo">margin-right: ;</span> => Margem a direita</li>
-			<li><span class="codigo">margin-left: ;</span> => Margem a esquerda</li>
-			<li><span class="codigo">margin-bottom: ;</span> => Margem inferior</li>
-			<li><span class="codigo">margin: <span class="text-blue">Valor1</span> ;</span> => usando só a propriedade margin e passando um valor, ele por padrão adicionará o valor a todos os lados</li>
-			<li><span class="codigo">padding: <span class="text-blue"> valor1 valor2</span>;</span> => Passando 2 valores, o primeiro aplicará margin no eixo y, ou seja, top e bottom e o segundo no eixo x, ou seja left e right </li>
-		</ul>
-		<p><span class="text-red">*IMPORTANTE</span> Quando se da uma margem a um box que está ao lado do outro as margens se fundem, por exemplo, a caixa 01 abaixo tem uma margim bottom de 10px e a caixa 2 tem uma margim top também de 10px, logo a margem entre os 2 é de 10px, e não de 20px. Caso a margin de um deles fosse diferente, e margem total entre os 2 seria a margem de maior, isso é chamado de Margin colapse</p>
-		<div class="caixa01 margem01">Caixa 01</div>
-		<div class="caixa01 margem02">Caixa 02</div>
+	<div class=" espacamento01 caixa03">
+		<p>esse texto está dentro de uma caixa que inicialmente tinha 100px por 100px mas foram adicionadas paddings de 20px no eixo "y" e 30px no eixo "x" fazendo com que a caixa ficasse com o tamanho de 140px por 160px </p>
 	</div>
-
-
-
-</body>
-</html>
+	<hr>
+	<h3>Margin</h3>
+	<p>Como o padding a margin serve para criar espaço entre coisas, mas no caso da mesma o espaçamento é feito entre caixas e não internamento, usando a propriedade <span class="codigo">margin: ;</span> podemos dar valores como <span class="text-blue"> 10px, 15%, auto </span></p>
+	<ul>
+		<li><span class="codigo">margin-top: ;</span> => Margem superior</li>
+		<li><span class="codigo">margin-right: ;</span> => Margem a direita</li>
+		<li><span class="codigo">margin-left: ;</span> => Margem a esquerda</li>
+		<li><span class="codigo">margin-bottom: ;</span> => Margem inferior</li>
+		<li><span class="codigo">margin: <span class="text-blue">Valor1</span> ;</span> => usando só a propriedade margin e passando um valor, ele por padrão adicionará o valor a todos os lados</li>
+		<li><span class="codigo">padding: <span class="text-blue"> valor1 valor2</span>;</span> => Passando 2 valores, o primeiro aplicará margin no eixo y, ou seja, top e bottom e o segundo no eixo x, ou seja left e right </li>
+	</ul>
+	<p><span class="text-red">*IMPORTANTE</span> Quando se da uma margem a um box que está ao lado do outro as margens se fundem, por exemplo, a caixa 01 abaixo tem uma margim bottom de 10px e a caixa 2 tem uma margim top também de 10px, logo a margem entre os 2 é de 10px, e não de 20px. Caso a margin de um deles fosse diferente, e margem total entre os 2 seria a margem de maior, isso é chamado de Margin colapse</p>
+	<div class="caixa01 margem01">Caixa 01</div>
+	<div class="caixa01 margem02">Caixa 02</div>
+</div>

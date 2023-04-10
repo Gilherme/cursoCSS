@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Curso css</title>
+</head>
+<body>
+
+	<header>
+    <h1 style="text-align:center;">Curso CSS</h1>
+  </header>
+
+  <div id="container">
+    <nav>
+      <ul>
+        <li><a href="views/animacoes.html">Animações</a></li>
+        <li><a href views="views/flexBox.html">Flex Box</a></li>
+        <li><a href views="views/seletores.html">Seletores</a></li>
+        <li><a href views="views/bordas.html">Bordas</a></li>
+        <li><a href views="views/imagens.html">imagens</a></li>
+        <li><a href views="views/textos.html">Textos</a></li>
+        <li><a href views="views/links.html">Links</a></li>
+        <li><a href views="views/tabelas.html">tabelas</a></li>
+        <li><a href views="views/formularios.html">formularios</a></li>
+        <li><a href views="views/bacground.html">Bacgrounds</a></li>
+        <li><a href views="views/barraNavegacao.html">Barra de navegação</a></li>
+        <li><a href views="views/boxModel.html">Box Model</a></li>
+        <li><a href views="views/elementosFlutuantes.html">Elementos flutuantes</a></li>
+        <li><a href views="views/inlineBlock.html">Inline, Block e Inline-Block</a></li>
+        <li><a href views="views/posicionamento.html">Posicionamento</a></li>
+        <li><a href views="views/grid.html">Grid</a></li>
+        
+      </ul>
+    </nav>
+    <section id="conteudo">
+  
+    </section>
+  </div>
+  <footer>
+    Curso css
+  </footer>
+
+  <script>
+    document.querySelectorAll('[views]').forEach(link => {
+      const conteudo = document.getElementById('conteudo');
+
+      link.onclick = function(e) {
+        e.preventDefault()                              // impede que o link funcione diretamente
+        fetch(link.getAttribute('views'))
+          .then(resp => resp.text())
+          .then(html => conteudo.innerHTML = html)
+      }
+    })
+  </script>
+</body>
+</html>

@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="cursoCss.css">
-	<title>Cuso css</title>
-	<style>
-		.caixa{width: 80px; height: 50px;}
-
-		.borda01{border: 5px dotted red;}
-		.borda02{border: 5px dashed blue;}
-		.borda03{border: 5px solid black;}
-		.borda04{border: 5px double darkblue}
-		.borda05{border: 5px groove yellow;}
-		.borda06{border: 5px ridge gray;}
-		.borda07{border: 5px inset darkblue}
-		.borda08{border: 5px outset red;}
-		.borda09{border: 5px none darkgray;}
-		.borda10{border: 5px hidden blueviolet;}
-
-		/*Uma maneira com mais liberdade de desenvolvimento*/
-		.borda11{
-			border-color: hotpink black green gray;
-			border-width: 7px 10px 3px 20px;
-			border-style: solid inset groove hidden;
-		}
-	</style>
-</head>
-<body>
-
+<div id="bordas">
 	<h1>Bordas</h1>
 	<div>
 		<span class="caixa borda01">dotted</span>
@@ -48,6 +18,4 @@
 	</div>
 	<p>as vezes quando definimos tabelas em elementos que estão próximos ou dentro de outros as bordas acabam se somando e talvez não tenha o efeito desejado</p>
 	<p>Para as bordas não se somarem ou duplicarem usamos a propriedade <span class="text-blue">border-collapse: <span class="text-purple">collapse</span>;</span> O valor <span class="text-purple">separete</span> é o padrão</p>
-
-</body>
-</html>
+</div>

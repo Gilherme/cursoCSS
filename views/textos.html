@@ -1,112 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="cursoCss.css">
-	<title>Curso CSS - Fontes e Cores</title>
-	<style>
+<h1>Textos</h1>
+<div>
+	<h3>Links úteis</h3>
+	<ul>
+		<li><a href="https://html-color-codes.info/Codigos-de-Cores-HTML/">Cores Exadecimais</a></li>
+		<li><a href="https://www.w3.org/Style/Examples/007/fonts.pt_BR.html">Fontes</a></li>
+	</ul>
+</div><hr>
 
+<div id="textos">
+	<p class="explicativo">A propriedade <span class="codigo">color</span> define a cor da fonte. <span class="codigo">Font-size</span> define o tamanho da fonte</p>
 
-		*{font-family: Arial, sans-serif;}
-		.explicativo{
-			font-size: 18px;
-			font-family: Courier, monospace;
-		}
+	<p class="textoColor01 tamanhoFonte01">Texto com a cor vermelha com um tamanho de 30px </p>
+	<hr>
+	<h3>Fontes</h3>
+	<p class="explicativo">A propriedade <span class="codigo">Font-family</span> define a fonte desejada</p>
+	<p class="explicativo">Sempre quando aplicar fontes é bom colocar outras opções caso o pc não tenha a primeira, e no final colocar o tipo da fonte, tipo serife ou sans serife</p>
 
-		.textBlue{color: blue;}
-		.codigo{font-weight: normal; font-size: 18px;color: hotpink;}
-		.textoColor01{color: red;}
-		.tamanhoFonte01{font-size: 30px;}
+	<p class="fonte01">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+	<p class="fonte02">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+	<p class="fonte03">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+	<p class="fonte04">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
 
-		.fonte01{font-family: Arial, sans-serif ;}
-		.fonte02{font-family: Times, Times New Roman, serif;}
-		.fonte03{font-family: Apple Chancery, cursive;}
-
-		.expessura01{font-size: 23px; font-weight: 100;}
-		.expessura02{font-size: 23px; font-weight: 800;}
-		.expessura03{font-size: 23px; font-weight: 500;}
-		.expessura04{font-size: 23px; font-weight: 600;}
-
-		.estilosTexto{
-			font-size: 18px;
-		}
-		.estilosTexto01{font-size: 1em;}
-		.estilosTexto02{ font-weight: bold; }
-		.estilosTexto03{ font-style: italic; }
-		.estilosTexto04{ text-decoration: underline; }
-		.estilosTexto05{ text-decoration: overline; }
-		.estilosTexto06{ text-decoration: line-through; }
-		.estilosTexto07{
-			font: bold 22px Times, serif;
-		}
-
-
-	</style>
-</head>
-<body>
-	<h1>Textos</h1>
-	<div>
-		<h3>Links úteis</h3>
-		<ul>
-			<li><a href="https://html-color-codes.info/Codigos-de-Cores-HTML/">Cores Exadecimais</a></li>
-			<li><a href="https://www.w3.org/Style/Examples/007/fonts.pt_BR.html">Fontes</a></li>
-		</ul>
-	</div><hr>
+	<hr>
+	<h3>Expessura da fonte</h3>
+	<p class="explicativo"> A propriedade <span class="codigo">font-weight</span>define a expessura da fonte, não em pixel, mas sim em centenas, exemplo 100,200,300,... Exemplos abaixo</p>
+	<span class="expessura01">expessura 100</span>
+	<span class="expessura02">expessura 800</span>
+	<span class="expessura03">expessura 500</span>
+	<span class="expessura04">expessura 600</span>
 	
-	<div id="container">
-		<p class="explicativo">A propriedade <span class="codigo">color</span> define a cor da fonte. <span class="codigo">Font-size</span> define o tamanho da fonte</p>
+</div><hr>
 
-		<p class="textoColor01 tamanhoFonte01">Texto com a cor vermelha com um tamanho de 30px </p>
-		<hr>
-		<h3>Fontes</h3>
-		<p class="explicativo">A propriedade <span class="codigo">Font-family</span> define a fonte desejada</p>
-		<p class="explicativo">Sempre quando aplicar fontes é bom colocar outras opções caso o pc não tenha a primeira, e no final colocar o tipo da fonte, tipo serife ou sans serife</p>
+<div class="estilosTexto">
+	<h3>Estilos de Texto</h3>
+	<p class="estilosTexto01">Para aplicarmos estilos de texto usamos as propriedades
+		<span class="codigo">font-size: ; </span>,<span class="codigo"> font-style: ;  </span>
+		<span class="codigo">text-decoration: ;  </span>
+			e podemos dar os valores de: Normal, 
+			<span class="estilosTexto02">bold</span>, 
+			<span class="estilosTexto03">Itálico</span></p>
 
-		<p class="fonte01">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-		<p class="fonte02">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-		<p class="fonte03">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-		<p class="fonte04">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+	<p>Texto normal</p>
+	<p class="estilosTexto02">Text Negrito <span class="codigo">font-weight: <span class="text-blue">bold</span>;</span></p>
+	<p class="estilosTexto03">Text Itálico <span class="codigo">font-style: <span class="text-blue">italic</span>;</span></p>
+	<p class="estilosTexto04">Text Underline <span class="codigo">text-decoration: <span class="text-blue">underline</span>;</span></p>
+	<p class="estilosTexto05">Text Overline <span class="codigo">text-decoration: <span class="text-blue">overline</span>;</span></p>
+	<p class="estilosTexto06">Text line-through;<span class="codigo">text-decoration: <span class="text-blue">line-through</span>;</span></p>
 
-		<hr>
-		<h3>Expessura da fonte</h3>
-		<p class="explicativo"> A propriedade <span class="codigo">font-weight</span>define a expessura da fonte, não em pixel, mas sim em centenas, exemplo 100,200,300,... Exemplos abaixo</p>
-		<span class="expessura01">expessura 100</span>
-		<span class="expessura02">expessura 800</span>
-		<span class="expessura03">expessura 500</span>
-		<span class="expessura04">expessura 600</span>
-		
-	</div><hr>
+	<p class="estilosTexto01">Exite a possibilidade de usar apenas a propriedade "font" e aplicar todos valores acima nela, por exemplo: <span class="codigo"> font: <span class="text-blue"> bold 40px Arial, sans-serif </span>;</span></p>
+	<p class="estilosTexto07"> Esse texto está usando todos os valores na propriedade font</p>
 
-	<div class="estilosTexto">
-		<h3>Estilos de Texto</h3>
-		<p class="estilosTexto01">Para aplicarmos estilos de texto usamos as propriedades
-			<span class="codigo">font-size: ; </span>,<span class="codigo"> font-style: ;  </span>
-			<span class="codigo">text-decoration: ;  </span>
-			 e podemos dar os valores de: Normal, 
-			 <span class="estilosTexto02">bold</span>, 
-			 <span class="estilosTexto03">Itálico</span></p>
-
-		<p>Texto normal</p>
-		<p class="estilosTexto02">Text Negrito <span class="codigo">font-weight: <span class="textBlue">bold</span>;</span></p>
-		<p class="estilosTexto03">Text Itálico <span class="codigo">font-style: <span class="textBlue">italic</span>;</span></p>
-		<p class="estilosTexto04">Text Underline <span class="codigo">text-decoration: <span class="textBlue">underline</span>;</span></p>
-		<p class="estilosTexto05">Text Overline <span class="codigo">text-decoration: <span class="textBlue">overline</span>;</span></p>
-		<p class="estilosTexto06">Text line-through;<span class="codigo">text-decoration: <span class="textBlue">line-through</span>;</span></p>
-
-		<p class="estilosTexto01">Exite a possibilidade de usar apenas a propriedade "font" e aplicar todos valores acima nela, por exemplo: <span class="codigo"> font: <span class="textBlue"> bold 40px Arial, sans-serif </span>;</span></p>
-
-		<p class="estilosTexto07"> Esse texto está usando todos os valores na propriedade font</p>
-
-		<hr>
-
-		<h3>Espaçamento Entre Letras</h3>
-		<p>Use <span class="codigo">letter-spacing:<span class="text-blue"> x</span>px ;</span> => Onde o x indica o numero de px a ser distanciado </p>
-		
-	</div>
-
-
-
-
-</body>
-</html>
+	<hr>
+	<h3>Espaçamento Entre Letras</h3>
+	<p>Use <span class="codigo">letter-spacing:<span class="text-blue"> x</span>px ;</span> => Onde o x indica o numero de px a ser distanciado </p>
+	
+</div>
